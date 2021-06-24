@@ -10,10 +10,11 @@ export default function bubbleSort(arr) {
         arr[j+1] = temp
       }
     }
+    console.log(arr)
   }
   console.timeEnd('bubbleSortStart')
   return arr
 }
 //test
-// let arr = [5,1,6,7,2,0,9,11,14,0.1,100,-1]
-// console.log(bubbleSort(arr))
+let arr = [5,1,6,7,2,0,9,11,14,0.1,100,99]
+bubbleSort(arr)

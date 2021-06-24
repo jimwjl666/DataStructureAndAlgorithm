@@ -1,5 +1,6 @@
 /* 归并排序，待深入理解后再写，下午再花费一小时 */
 function merge(left,right){
+  console.log(left,right)
   let temp = []
   while(left.length && right.length) {
     if(left[0]<right[0]){
@@ -19,5 +20,5 @@ export default function mergeSort(data){
   let right = data.slice(mid)
   return merge(mergeSort(left),mergeSort(right))
 }
-// let arr = [5,4,8,1,0,3,2]
-// console.log(mergeSort(arr))
+let arr = [5,4,8,1,0,3,2]
+mergeSort(arr)
